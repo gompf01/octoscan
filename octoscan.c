@@ -1892,7 +1892,7 @@ static void print_services(struct scantp *stp)
 				case 16:
 				{	
 					// DVB-T2
-					snprintf(szTemp,1024,"#EXTINF:-1,%s\nrtsp://%s:%s/?freq=%u&msys=dvbt&sr=%u&pids=%s\n",s->name,scon->host,scon->port,tpi->freq, tpi->sr,szPIDs);
+					snprintf(szTemp,1024,"#EXTINF:-1,%s\nrtsp://%s:%s/?freq=%u&msys=dvbt2&sr=%u&pids=%s\n",s->name,scon->host,scon->port,tpi->freq, tpi->sr,szPIDs);
 					break;
 				}
 				case 19:
